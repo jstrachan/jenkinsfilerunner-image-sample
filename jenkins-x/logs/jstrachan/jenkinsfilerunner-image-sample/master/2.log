@@ -1,0 +1,313 @@
+
+Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-kb9bg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-pxk58[0m
+{"level":"warn","ts":1581581426.0933092,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1581581426.0939434,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-kb9bg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-rj84t[0m
+{"level":"warn","ts":1581581426.6403582,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1581581426.64275,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-kb9bg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-kb9bg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jstrachan-jenkinsfilerunner-ima-kb9bg-rqgqq[0m
+{"level":"warn","ts":1581581447.7439563,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1581581448.7415888,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/jenkinsfilerunner-image-sample.git @ v0.0.1 in path /workspace/source"}
+
+Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-kb9bg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-kb9bg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-kb9bg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+ERROR: logging before flag.Parse: E0213 08:10:52.348030      12 metadata.go:241] Failed to unmarshal scopes: invalid character 'h' looking for beginning of value
+[36mINFO[0m[0001] Downloading base image jenkins4eval/jenkinsfile-runner 
+ERROR: logging before flag.Parse: E0213 08:10:52.357339      12 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+ERROR: logging before flag.Parse: E0213 08:10:52.642131      12 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+2020/02/13 08:10:52 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0002] Error while retrieving image from cache: getting file info: stat /workspace/sha256:871f5f0e2fc671104b0f0c7fffd50a4686791835d8dfc07e0277cc4c4356c92c: no such file or directory 
+[36mINFO[0m[0002] Downloading base image jenkins4eval/jenkinsfile-runner 
+2020/02/13 08:10:53 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0003] Using files from context: [/workspace/source/plugins.txt] 
+[36mINFO[0m[0003] Checking for cached layer gcr.io/*********-multicluster/cache:0319094d835fa912d9330173ac65843231e9e2b3c40039ce14aa6e26be4224ef... 
+2020/02/13 08:10:54 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0004] No cached layer found for cmd RUN cd /app/jenkins && jar -cvf jenkins.war * 
+[36mINFO[0m[0004] Unpacking rootfs as cmd RUN cd /app/jenkins && jar -cvf jenkins.war * requires it. 
+[36mINFO[0m[0021] Taking snapshot of full filesystem...        
+[36mINFO[0m[0030] Using files from context: [/workspace/source/plugins.txt] 
+[36mINFO[0m[0030] COPY plugins.txt /usr/share/jenkins/ref/plugins.txt 
+[36mINFO[0m[0030] Taking snapshot of files...                  
+[36mINFO[0m[0030] RUN cd /app/jenkins && jar -cvf jenkins.war * 
+[36mINFO[0m[0030] cmd: /bin/sh                                 
+[36mINFO[0m[0030] args: [-c cd /app/jenkins && jar -cvf jenkins.war *] 
+added manifest
+adding: ColorFormatter.class(in = 1946) (out= 1001)(deflated 48%)
+adding: JNLPMain.class(in = 1674) (out= 938)(deflated 43%)
+adding: LogFileOutputStream$1.class(in = 862) (out= 514)(deflated 40%)
+adding: LogFileOutputStream$2.class(in = 636) (out= 363)(deflated 42%)
+adding: LogFileOutputStream.class(in = 2240) (out= 1091)(deflated 51%)
+ignoring entry META-INF/
+adding: META-INF/JENKINS.SF(in = 142135) (out= 57370)(deflated 59%)
+adding: META-INF/JENKINS.RSA(in = 10879) (out= 7542)(deflated 30%)
+ignoring entry META-INF/MANIFEST.MF
+adding: META-INF/maven/(in = 0) (out= 0)(stored 0%)
+adding: META-INF/maven/org.jenkins-ci.main/(in = 0) (out= 0)(stored 0%)
+adding: META-INF/maven/org.jenkins-ci.main/jenkins-war/(in = 0) (out= 0)(stored 0%)
+adding: META-INF/maven/org.jenkins-ci.main/jenkins-war/pom.xml(in = 9049) (out= 2222)(deflated 75%)
+adding: META-INF/maven/org.jenkins-ci.main/jenkins-war/pom.properties(in = 98) (out= 92)(deflated 6%)
+adding: Main$FileAndDescription.class(in = 512) (out= 331)(deflated 35%)
+adding: Main.class(in = 20730) (out= 10631)(deflated 48%)
+adding: MainDialog$1$1.class(in = 1048) (out= 570)(deflated 45%)
+adding: MainDialog$1.class(in = 1067) (out= 636)(deflated 40%)
+adding: MainDialog.class(in = 2633) (out= 1423)(deflated 45%)
+adding: WEB-INF/(in = 0) (out= 0)(stored 0%)
+adding: WEB-INF/lib/(in = 0) (out= 0)(stored 0%)
+adding: WEB-INF/lib/commons-jexl-1.1-jenkins-20111212.jar(in = 140940) (out= 125729)(deflated 10%)
+adding: WEB-INF/lib/args4j-2.0.31.jar(in = 87193) (out= 75808)(deflated 13%)
+adding: WEB-INF/lib/guava-11.0.1.jar(in = 1649781) (out= 1466779)(deflated 11%)
+adding: WEB-INF/lib/spring-core-2.5.6.SEC03.jar(in = 285605) (out= 254712)(deflated 10%)
+adding: WEB-INF/lib/symbol-annotation-1.1.jar(in = 2322) (out= 1384)(deflated 40%)
+adding: WEB-INF/lib/localizer-1.26.jar(in = 8600) (out= 6837)(deflated 20%)
+adding: WEB-INF/lib/aopalliance-1.0.jar(in = 4467) (out= 2643)(deflated 40%)
+adding: WEB-INF/lib/cli-2.176.2.jar(in = 62021) (out= 56975)(deflated 8%)
+adding: WEB-INF/lib/asm-5.0.3.jar(in = 53231) (out= 50466)(deflated 5%)
+adding: WEB-INF/lib/ssh-cli-auth-1.5.jar(in = 10864) (out= 7403)(deflated 31%)
+adding: WEB-INF/lib/trilead-ssh2-build-217-jenkins-14.jar(in = 325838) (out= 298866)(deflated 8%)
+adding: WEB-INF/lib/memory-monitor-1.9.jar(in = 17292) (out= 15183)(deflated 12%)
+adding: WEB-INF/lib/asm5-5.0.1.jar(in = 379343) (out= 357228)(deflated 5%)
+adding: WEB-INF/lib/jquery-detached-1.2.1-core-assets.jar(in = 210775) (out= 206723)(deflated 1%)
+adding: WEB-INF/lib/stapler-groovy-1.257.2.jar(in = 32053) (out= 27114)(deflated 15%)
+adding: WEB-INF/lib/commons-httpclient-3.1-jenkins-1.jar(in = 321537) (out= 295938)(deflated 7%)
+adding: WEB-INF/lib/mail-1.4.4.jar(in = 494924) (out= 464789)(deflated 6%)
+adding: WEB-INF/lib/wstx-asl-3.2.9.jar(in = 524224) (out= 498840)(deflated 4%)
+adding: WEB-INF/lib/javax.annotation-api-1.2.jar(in = 26366) (out= 23303)(deflated 11%)
+adding: WEB-INF/lib/jcl-over-slf4j-1.7.25.jar(in = 16515) (out= 14074)(deflated 14%)
+adding: WEB-INF/lib/junit-4.12.jar(in = 314932) (out= 278248)(deflated 11%)
+adding: WEB-INF/lib/relaxngDatatype-20020414.jar(in = 19255) (out= 5265)(deflated 72%)
+adding: WEB-INF/lib/jcommon-1.0.12.jar(in = 309245) (out= 285909)(deflated 7%)
+adding: WEB-INF/lib/jnr-ffi-2.1.8.jar(in = 684615) (out= 594595)(deflated 13%)
+adding: WEB-INF/lib/txw2-20110809.jar(in = 66688) (out= 59770)(deflated 10%)
+adding: WEB-INF/lib/libzfs-0.8.jar(in = 67845) (out= 59340)(deflated 12%)
+adding: WEB-INF/lib/robust-http-client-1.2.jar(in = 4414) (out= 3257)(deflated 26%)
+adding: WEB-INF/lib/spring-beans-2.5.6.SEC03.jar(in = 488162) (out= 433545)(deflated 11%)
+adding: WEB-INF/lib/annotation-indexer-1.12.jar(in = 16098) (out= 13419)(deflated 16%)
+adding: WEB-INF/lib/asm-util-5.0.3.jar(in = 43296) (out= 41129)(deflated 5%)
+adding: WEB-INF/lib/task-reactor-1.5.jar(in = 22114) (out= 18056)(deflated 18%)
+adding: WEB-INF/lib/jnr-constants-0.9.9.jar(in = 359323) (out= 333645)(deflated 7%)
+adding: WEB-INF/lib/hamcrest-core-1.3.jar(in = 45024) (out= 39918)(deflated 11%)
+adding: WEB-INF/lib/jffi-1.2.16-native.jar(in = 664435) (out= 652987)(deflated 1%)
+adding: WEB-INF/lib/bootstrap-1.3.2-core-assets.jar(in = 156309) (out= 154172)(deflated 1%)
+adding: WEB-INF/lib/ezmorph-1.0.6.jar(in = 86487) (out= 79919)(deflated 7%)
+adding: WEB-INF/lib/bridge-method-annotation-1.13.jar(in = 3161) (out= 1730)(deflated 45%)
+adding: WEB-INF/lib/stapler-jelly-1.257.2.jar(in = 87968) (out= 76809)(deflated 12%)
+adding: WEB-INF/lib/winp-1.28.jar(in = 224963) (out= 222872)(deflated 0%)
+adding: WEB-INF/lib/activation-1.1.1-hudson-1.jar(in = 70869) (out= 65440)(deflated 7%)
+adding: WEB-INF/lib/commons-codec-1.9.jar(in = 263965) (out= 215396)(deflated 18%)
+adding: WEB-INF/lib/stapler-adjunct-zeroclipboard-1.3.5-1.jar(in = 19162) (out= 17390)(deflated 9%)
+adding: WEB-INF/lib/jquery-detached-1.2.jar(in = 2130) (out= 1364)(deflated 35%)
+adding: WEB-INF/lib/commons-discovery-0.4.jar(in = 76685) (out= 65589)(deflated 14%)
+adding: WEB-INF/lib/commons-beanutils-1.9.3.jar(in = 246174) (out= 224393)(deflated 8%)
+adding: WEB-INF/lib/dom4j-1.6.1-jenkins-4.jar(in = 254359) (out= 238666)(deflated 6%)
+adding: WEB-INF/lib/commons-jelly-tags-define-1.0.1-hudson-20071021.jar(in = 22732) (out= 18427)(deflated 18%)
+adding: WEB-INF/lib/stapler-1.257.2.jar(in = 441356) (out= 393673)(deflated 10%)
+adding: WEB-INF/lib/akuma-1.10.jar(in = 19673) (out= 17996)(deflated 8%)
+adding: WEB-INF/lib/sezpoz-1.13.jar(in = 28254) (out= 25577)(deflated 9%)
+adding: WEB-INF/lib/spring-jdbc-1.2.9.jar(in = 187036) (out= 163751)(deflated 12%)
+adding: WEB-INF/lib/commons-jelly-tags-xml-1.1.jar(in = 37430) (out= 33596)(deflated 10%)
+adding: WEB-INF/lib/commons-fileupload-1.3.1-jenkins-2.jar(in = 68803) (out= 59930)(deflated 12%)
+adding: WEB-INF/lib/upstart-slave-installer-1.1.jar(in = 10798) (out= 7970)(deflated 26%)
+adding: WEB-INF/lib/spring-dao-1.2.9.jar(in = 95425) (out= 81220)(deflated 14%)
+adding: WEB-INF/lib/remoting-3.29.jar(in = 789283) (out= 724165)(deflated 8%)
+adding: WEB-INF/lib/jna-posix-1.0.3-jenkins-1.jar(in = 91455) (out= 80299)(deflated 12%)
+adding: WEB-INF/lib/spring-context-2.5.6.SEC03.jar(in = 476894) (out= 412322)(deflated 13%)
+adding: WEB-INF/lib/guice-4.0.jar(in = 668235) (out= 601805)(deflated 9%)
+adding: WEB-INF/lib/systemd-slave-installer-1.1.jar(in = 11541) (out= 8790)(deflated 23%)
+adding: WEB-INF/lib/stax-api-1.0-2.jar(in = 23346) (out= 18225)(deflated 21%)
+adding: WEB-INF/lib/jffi-1.2.17.jar(in = 151102) (out= 135704)(deflated 10%)
+adding: WEB-INF/lib/jzlib-1.1.3-kohsuke-1.jar(in = 71852) (out= 67252)(deflated 6%)
+adding: WEB-INF/lib/spring-webmvc-2.5.6.SEC03.jar(in = 402348) (out= 355918)(deflated 11%)
+adding: WEB-INF/lib/bytecode-compatibility-transformer-2.0-beta-2.jar(in = 37512) (out= 32354)(deflated 13%)
+adding: WEB-INF/lib/libpam4j-1.11.jar(in = 21038) (out= 17116)(deflated 18%)
+adding: WEB-INF/lib/commons-io-2.6.jar(in = 214788) (out= 196586)(deflated 8%)
+adding: WEB-INF/lib/commons-jelly-1.1-jenkins-20120928.jar(in = 170642) (out= 152619)(deflated 10%)
+adding: WEB-INF/lib/asm6-6.2.jar(in = 432906) (out= 404926)(deflated 6%)
+adding: WEB-INF/lib/jline-2.12.jar(in = 213854) (out= 198654)(deflated 7%)
+adding: WEB-INF/lib/sshd-2.6.jar(in = 28388) (out= 22870)(deflated 19%)
+adding: WEB-INF/lib/ant-launcher-1.9.2.jar(in = 18333) (out= 17130)(deflated 6%)
+adding: WEB-INF/lib/commons-jelly-tags-fmt-1.0.jar(in = 22479) (out= 20209)(deflated 10%)
+adding: WEB-INF/lib/tiger-types-2.2.jar(in = 17547) (out= 15375)(deflated 12%)
+adding: WEB-INF/lib/xstream-1.4.7-jenkins-1.jar(in = 533110) (out= 464410)(deflated 12%)
+adding: WEB-INF/lib/antlr-2.7.6.jar(in = 443432) (out= 420698)(deflated 5%)
+adding: WEB-INF/lib/stapler-adjunct-codemirror-1.3.jar(in = 275643) (out= 250487)(deflated 9%)
+adding: WEB-INF/lib/slf4j-api-1.7.25.jar(in = 41203) (out= 36532)(deflated 11%)
+adding: WEB-INF/lib/constant-pool-scanner-1.2.jar(in = 14986) (out= 12083)(deflated 19%)
+adding: WEB-INF/lib/jaxen-1.1-beta-11.jar(in = 238637) (out= 209947)(deflated 12%)
+adding: WEB-INF/lib/instance-identity-2.2.jar(in = 16761) (out= 13759)(deflated 17%)
+adding: WEB-INF/lib/stapler-jrebel-1.257.2.jar(in = 6736) (out= 5143)(deflated 23%)
+adding: WEB-INF/lib/icon-set-1.0.5.jar(in = 17567) (out= 15765)(deflated 10%)
+adding: WEB-INF/lib/jcip-annotations-1.0.jar(in = 2254) (out= 1496)(deflated 33%)
+adding: WEB-INF/lib/crypto-util-1.1.jar(in = 4810) (out= 3612)(deflated 24%)
+adding: WEB-INF/lib/groovy-all-2.4.12.jar(in = 7033424) (out= 6294670)(deflated 10%)
+adding: WEB-INF/lib/j-interopdeps-2.0.6-kohsuke-1.jar(in = 117686) (out= 109386)(deflated 7%)
+adding: WEB-INF/lib/jsr305-3.0.1.jar(in = 19943) (out= 14778)(deflated 25%)
+adding: WEB-INF/lib/javax.servlet.jsp.jstl-api-1.2.1.jar(in = 32522) (out= 28088)(deflated 13%)
+adding: WEB-INF/lib/jnr-x86asm-1.0.2.jar(in = 219943) (out= 200360)(deflated 8%)
+adding: WEB-INF/lib/javax.inject-1.jar(in = 2497) (out= 1796)(deflated 28%)
+adding: WEB-INF/lib/commons-compress-1.10.jar(in = 409475) (out= 365747)(deflated 10%)
+adding: WEB-INF/lib/spring-aop-2.5.6.SEC03.jar(in = 325756) (out= 280901)(deflated 13%)
+adding: WEB-INF/lib/jnr-posix-3.0.45.jar(in = 240009) (out= 219832)(deflated 8%)
+adding: WEB-INF/lib/log4j-over-slf4j-1.7.25.jar(in = 23645) (out= 19184)(deflated 18%)
+adding: WEB-INF/lib/annotations-3.0.1.jar(in = 38806) (out= 27647)(deflated 28%)
+adding: WEB-INF/lib/commons-digester-2.1.jar(in = 196768) (out= 169402)(deflated 13%)
+adding: WEB-INF/lib/kxml2-2.3.0.jar(in = 43858) (out= 41500)(deflated 5%)
+adding: WEB-INF/lib/spring-web-2.5.6.SEC03.jar(in = 194726) (out= 170196)(deflated 12%)
+adding: WEB-INF/lib/asm-commons-5.0.3.jar(in = 41717) (out= 38656)(deflated 7%)
+adding: WEB-INF/lib/jcifs-1.3.17-kohsuke-1.jar(in = 398132) (out= 372785)(deflated 6%)
+adding: WEB-INF/lib/launchd-slave-installer-1.2.jar(in = 22663) (out= 19197)(deflated 15%)
+adding: WEB-INF/lib/windows-slave-installer-1.10.0.jar(in = 168962) (out= 165464)(deflated 2%)
+adding: WEB-INF/lib/jenkins-stapler-support-1.1.jar(in = 4578) (out= 2805)(deflated 38%)
+adding: WEB-INF/lib/stapler-adjunct-timeline-1.5.jar(in = 182472) (out= 145741)(deflated 20%)
+adding: WEB-INF/lib/version-number-1.6.jar(in = 13588) (out= 11415)(deflated 15%)
+adding: WEB-INF/lib/embedded_su4j-1.1.jar(in = 5298) (out= 4207)(deflated 20%)
+adding: WEB-INF/lib/access-modifier-annotation-1.14.jar(in = 10623) (out= 7995)(deflated 24%)
+adding: WEB-INF/lib/self-signed-cert-generator-1.0.0.jar(in = 791279) (out= 650382)(deflated 17%)
+adding: WEB-INF/lib/jmdns-3.4.0-jenkins-3.jar(in = 390437) (out= 362910)(deflated 7%)
+adding: WEB-INF/lib/sshd-core-1.7.0.jar(in = 1741039) (out= 1594323)(deflated 8%)
+adding: WEB-INF/lib/handlebars-1.1.1-core-assets.jar(in = 65887) (out= 64648)(deflated 1%)
+adding: WEB-INF/lib/windows-package-checker-1.2.jar(in = 4370) (out= 3148)(deflated 27%)
+adding: WEB-INF/lib/commons-collections-3.2.2.jar(in = 588337) (out= 511550)(deflated 13%)
+adding: WEB-INF/lib/jansi-1.11.jar(in = 114415) (out= 104283)(deflated 8%)
+adding: WEB-INF/lib/stax-api-1.0.1.jar(in = 26514) (out= 20446)(deflated 22%)
+adding: WEB-INF/lib/asm-analysis-5.0.3.jar(in = 20443) (out= 18306)(deflated 10%)
+adding: WEB-INF/lib/asm-tree-5.0.3.jar(in = 29036) (out= 25061)(deflated 13%)
+adding: WEB-INF/lib/xpp3-1.1.4c.jar(in = 120069) (out= 111876)(deflated 6%)
+adding: WEB-INF/lib/j-interop-2.0.6-kohsuke-1.jar(in = 385815) (out= 361233)(deflated 6%)
+adding: WEB-INF/lib/eddsa-0.3.0.jar(in = 63292) (out= 57265)(deflated 9%)
+adding: WEB-INF/lib/ant-1.9.2.jar(in = 2000557) (out= 1844552)(deflated 7%)
+adding: WEB-INF/lib/jfreechart-1.0.9.jar(in = 1291498) (out= 1220321)(deflated 5%)
+adding: WEB-INF/lib/slf4j-jdk14-1.7.25.jar(in = 8460) (out= 7078)(deflated 16%)
+adding: WEB-INF/lib/json-lib-2.4-jenkins-2.jar(in = 141207) (out= 128309)(deflated 9%)
+adding: WEB-INF/lib/spring-context-support-2.5.6.SEC03.jar(in = 96868) (out= 86314)(deflated 10%)
+adding: WEB-INF/lib/oro-2.0.8.jar(in = 65261) (out= 56142)(deflated 13%)
+adding: WEB-INF/lib/trilead-putty-extension-1.2.jar(in = 7946) (out= 6755)(deflated 14%)
+adding: WEB-INF/lib/jbcrypt-1.0.0.jar(in = 17075) (out= 15762)(deflated 7%)
+adding: WEB-INF/lib/jtidy-4aug2000r7-dev-hudson-1.jar(in = 123170) (out= 113108)(deflated 8%)
+adding: WEB-INF/lib/acegi-security-1.0.7.jar(in = 548722) (out= 479462)(deflated 12%)
+adding: WEB-INF/lib/commons-lang-2.6.jar(in = 284220) (out= 265620)(deflated 6%)
+adding: WEB-INF/lib/slave-installer-1.6.jar(in = 27374) (out= 22385)(deflated 18%)
+adding: WEB-INF/lib/jenkins-core-2.176.2.jar(in = 10761711) (out= 9202930)(deflated 14%)
+adding: WEB-INF/jboss-deployment-structure.xml(in = 553) (out= 217)(deflated 60%)
+adding: WEB-INF/hudson(in = 551) (out= 337)(deflated 38%)
+adding: WEB-INF/web.xml(in = 8973) (out= 2756)(deflated 69%)
+adding: WEB-INF/update-center-rootCAs/(in = 0) (out= 0)(stored 0%)
+adding: WEB-INF/update-center-rootCAs/jenkins-update-center-root-ca(in = 1639) (out= 1081)(deflated 34%)
+adding: WEB-INF/update-center-rootCAs/jenkins-update-center-root-ca-2.txt(in = 154) (out= 114)(deflated 25%)
+adding: WEB-INF/update-center-rootCAs/jenkins-update-center-root-ca-2(in = 2110) (out= 1564)(deflated 25%)
+adding: WEB-INF/update-center-rootCAs/jenkins-update-center-root-ca.txt(in = 76) (out= 73)(deflated 3%)
+adding: WEB-INF/sun-web.xml(in = 1669) (out= 997)(deflated 40%)
+adding: WEB-INF/classes/(in = 0) (out= 0)(stored 0%)
+adding: WEB-INF/classes/dependencies.txt(in = 7480) (out= 2027)(deflated 72%)
+adding: WEB-INF/classes/META-INF/(in = 0) (out= 0)(stored 0%)
+adding: WEB-INF/classes/META-INF/licenses.html(in = 32240) (out= 5492)(deflated 82%)
+adding: WEB-INF/classes/META-INF/licenses.xml(in = 48592) (out= 9382)(deflated 80%)
+adding: WEB-INF/jonas-web.xml(in = 1483) (out= 848)(deflated 42%)
+adding: WEB-INF/jboss-web.xml(in = 431) (out= 237)(deflated 45%)
+adding: WEB-INF/security/(in = 0) (out= 0)(stored 0%)
+adding: WEB-INF/security/AbstractPasswordBasedSecurityRealm.groovy(in = 2091) (out= 1042)(deflated 50%)
+adding: WEB-INF/security/SecurityFilters.groovy(in = 4892) (out= 1908)(deflated 60%)
+adding: WEB-INF/ibm-web-bnd.xmi(in = 1649) (out= 997)(deflated 39%)
+adding: bootstrap/(in = 0) (out= 0)(stored 0%)
+adding: bootstrap/css/(in = 0) (out= 0)(stored 0%)
+adding: bootstrap/css/bootstrap.css(in = 6701) (out= 2101)(deflated 68%)
+adding: bootstrap/css/bootstrap-theme.min.css(in = 24410) (out= 2849)(deflated 88%)
+adding: bootstrap/css/bootstrap.min.css(in = 5523) (out= 1988)(deflated 64%)
+adding: bootstrap/css/bootstrap-theme.css(in = 26044) (out= 2908)(deflated 88%)
+adding: bootstrap/config.json(in = 17379) (out= 3243)(deflated 81%)
+adding: dc-license.txt(in = 1544) (out= 809)(deflated 47%)
+adding: executable/(in = 0) (out= 0)(stored 0%)
+adding: executable/Executable.class(in = 277) (out= 202)(deflated 27%)
+adding: favicon.ico(in = 17542) (out= 7097)(deflated 59%)
+adding: robots.txt(in = 71) (out= 72)(deflated -1%)
+[36mINFO[0m[0032] Taking snapshot of full filesystem...        
+[36mINFO[0m[0035] Pushing layer gcr.io/*********-multicluster/cache:0319094d835fa912d9330173ac65843231e9e2b3c40039ce14aa6e26be4224ef to cache now 
+[36mINFO[0m[0035] RUN java -jar /app/bin/jenkins-plugin-manager.jar --war /app/jenkins/jenkins.war --plugin-file /usr/share/jenkins/ref/plugins.txt && rm /app/jenkins/jenkins.war 
+[36mINFO[0m[0035] cmd: /bin/sh                                 
+[36mINFO[0m[0035] args: [-c java -jar /app/bin/jenkins-plugin-manager.jar --war /app/jenkins/jenkins.war --plugin-file /usr/share/jenkins/ref/plugins.txt && rm /app/jenkins/jenkins.war] 
+File containing list of plugins to be downloaded: /usr/share/jenkins/ref/plugins.txt
+Reading in plugins from /usr/share/jenkins/ref/plugins.txt
+
+No directory to download plugins entered. Will use default of /usr/share/jenkins/ref/plugins
+Using update center https://updates.jenkins.io from JENKINS_UC environment variable
+No CLI option or environment variable set for experimental update center, using default of https://updates.jenkins.io/experimental
+No CLI option or environment variable set for incrementals mirror, using default of https://repo.jenkins-ci.org/incrementals
+Will use war file: /app/jenkins/jenkins.war
+Unable to get version from war file
+
+Downloading plugin jackson2-api from url: https://updates.jenkins.io/download/plugins/jackson2-api/2.10.2/jackson2-api.hpi
+
+Downloading plugin google-oauth-plugin from url: https://updates.jenkins.io/download/plugins/google-oauth-plugin/0.8/google-oauth-plugin.hpi
+
+Downloading plugin bouncycastle-api from url: https://updates.jenkins.io/download/plugins/bouncycastle-api/2.17/bouncycastle-api.hpi
+
+Downloading plugin apache-httpcomponents-client-4-api from url: https://updates.jenkins.io/download/plugins/apache-httpcomponents-client-4-api/4.5.5-3.0/apache-httpcomponents-client-4-api.hpi
+
+Downloading plugin workflow-step-api from url: https://updates.jenkins.io/download/plugins/workflow-step-api/2.22/workflow-step-api.hpi
+
+Downloading plugin kubernetes-credentials from url: https://updates.jenkins.io/download/plugins/kubernetes-credentials/0.6.2/kubernetes-credentials.hpi
+
+Downloading plugin docker-commons from url: https://updates.jenkins.io/download/plugins/docker-commons/1.14/docker-commons.hpi
+
+Downloading plugin credentials-binding from url: https://updates.jenkins.io/download/plugins/credentials-binding/1.12/credentials-binding.hpi
+
+Downloading plugin authentication-tokens from url: https://updates.jenkins.io/download/plugins/authentication-tokens/1.3/authentication-tokens.hpi
+
+Downloading plugin variant from url: https://updates.jenkins.io/download/plugins/variant/1.3/variant.hpi
+
+Downloading plugin kubernetes from url: https://updates.jenkins.io/latest/kubernetes.hpi
+
+Downloading plugin plain-credentials from url: https://updates.jenkins.io/download/plugins/plain-credentials/1.5/plain-credentials.hpi
+
+Downloading plugin scm-api from url: https://updates.jenkins.io/download/plugins/scm-api/2.2.6/scm-api.hpi
+
+Downloading plugin credentials from url: https://updates.jenkins.io/download/plugins/credentials/2.3.0/credentials.hpi
+
+Downloading plugin oauth-credentials from url: https://updates.jenkins.io/download/plugins/oauth-credentials/0.3/oauth-credentials.hpi
+
+Downloading plugin kubernetes-client-api from url: https://updates.jenkins.io/download/plugins/kubernetes-client-api/4.6.4-2/kubernetes-client-api.hpi
+
+Downloading plugin cloudbees-folder from url: https://updates.jenkins.io/download/plugins/cloudbees-folder/6.9/cloudbees-folder.hpi
+
+Downloading plugin workflow-api from url: https://updates.jenkins.io/download/plugins/workflow-api/2.37/workflow-api.hpi
+
+Downloading plugin structs from url: https://updates.jenkins.io/download/plugins/structs/1.20/structs.hpi
+
+Downloading plugin durable-task from url: https://updates.jenkins.io/download/plugins/durable-task/1.33/durable-task.hpi
+structs downloaded successfully
+kubernetes-credentials downloaded successfully
+scm-api downloaded successfully
+cloudbees-folder downloaded successfully
+credentials downloaded successfully
+authentication-tokens downloaded successfully
+workflow-step-api downloaded successfully
+kubernetes downloaded successfully
+plain-credentials downloaded successfully
+apache-httpcomponents-client-4-api downloaded successfully
+durable-task downloaded successfully
+docker-commons downloaded successfully
+jackson2-api downloaded successfully
+variant downloaded successfully
+kubernetes-client-api downloaded successfully
+credentials-binding downloaded successfully
+google-oauth-plugin downloaded successfully
+oauth-credentials downloaded successfully
+bouncycastle-api downloaded successfully
+workflow-api downloaded successfully
+Done
+[36mINFO[0m[0042] Taking snapshot of full filesystem...        
+[36mINFO[0m[0042] Adding whiteout for /app/jenkins/jenkins.war 
+[36mINFO[0m[0045] Pushing layer gcr.io/*********-multicluster/cache:b6a0f131f820d7524049fe4fa5aa51cbe6384d9c471d9a04e80998ee6eb27171 to cache now 
+[33mWARN[0m[0046] error uploading layer to cache: failed to push to destination gcr.io/*********-multicluster/cache:0319094d835fa912d9330173ac65843231e9e2b3c40039ce14aa6e26be4224ef: UNAUTHORIZED: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication 
+error pushing image: failed to push to destination gcr.io/*********-multicluster/jenkinsfilerunner-image-sample:0.0.1: UNAUTHORIZED: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-build-container-build'. The execution of the pipeline has stopped.[0m
