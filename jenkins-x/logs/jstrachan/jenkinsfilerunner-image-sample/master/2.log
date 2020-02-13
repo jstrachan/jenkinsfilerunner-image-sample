@@ -1,40 +1,40 @@
 
-Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-kb9bg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-pxk58[0m
-{"level":"warn","ts":1581581426.0933092,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1581581426.0939434,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-lpm6n-2[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-kx5b8[0m
+{"level":"warn","ts":1581586509.0527537,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1581586509.0535088,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-kb9bg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-rj84t[0m
-{"level":"warn","ts":1581581426.6403582,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1581581426.64275,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-lpm6n-2[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-xgw2z[0m
+{"level":"warn","ts":1581586510.3628836,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1581586510.3640163,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-kb9bg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-lpm6n-2[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-kb9bg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jstrachan-jenkinsfilerunner-ima-kb9bg-rqgqq[0m
-{"level":"warn","ts":1581581447.7439563,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1581581448.7415888,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/jenkinsfilerunner-image-sample.git @ v0.0.1 in path /workspace/source"}
+Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-lpm6n-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jstrachan-jenkinsfilerunner-ima-lpm6n-h7wc8[0m
+{"level":"warn","ts":1581586529.462438,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1581586530.4993112,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/jenkinsfilerunner-image-sample.git @ v0.0.2 in path /workspace/source"}
 
-Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-kb9bg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-lpm6n-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
 Using SHAs from PULL_REFS=master:
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-kb9bg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-lpm6n-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
 Generated Git credentials file /workspace/xdg_config/git/credentials
 
-Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-kb9bg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
-ERROR: logging before flag.Parse: E0213 08:10:52.348030      12 metadata.go:241] Failed to unmarshal scopes: invalid character 'h' looking for beginning of value
-[36mINFO[0m[0001] Downloading base image jenkins4eval/jenkinsfile-runner 
-ERROR: logging before flag.Parse: E0213 08:10:52.357339      12 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
-ERROR: logging before flag.Parse: E0213 08:10:52.642131      12 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
-2020/02/13 08:10:52 No matching credentials were found, falling back on anonymous
-[36mINFO[0m[0002] Error while retrieving image from cache: getting file info: stat /workspace/sha256:871f5f0e2fc671104b0f0c7fffd50a4686791835d8dfc07e0277cc4c4356c92c: no such file or directory 
+Showing logs for build [32mjstrachan-jenkinsfilerunner-ima-lpm6n-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+ERROR: logging before flag.Parse: E0213 09:35:34.135600      13 metadata.go:241] Failed to unmarshal scopes: invalid character 'h' looking for beginning of value
 [36mINFO[0m[0002] Downloading base image jenkins4eval/jenkinsfile-runner 
-2020/02/13 08:10:53 No matching credentials were found, falling back on anonymous
-[36mINFO[0m[0003] Using files from context: [/workspace/source/plugins.txt] 
-[36mINFO[0m[0003] Checking for cached layer gcr.io/*********-multicluster/cache:0319094d835fa912d9330173ac65843231e9e2b3c40039ce14aa6e26be4224ef... 
-2020/02/13 08:10:54 No matching credentials were found, falling back on anonymous
-[36mINFO[0m[0004] No cached layer found for cmd RUN cd /app/jenkins && jar -cvf jenkins.war * 
-[36mINFO[0m[0004] Unpacking rootfs as cmd RUN cd /app/jenkins && jar -cvf jenkins.war * requires it. 
-[36mINFO[0m[0021] Taking snapshot of full filesystem...        
+ERROR: logging before flag.Parse: E0213 09:35:34.428865      13 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+ERROR: logging before flag.Parse: E0213 09:35:34.529147      13 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+2020/02/13 09:35:34 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0004] Error while retrieving image from cache: getting file info: stat /workspace/sha256:871f5f0e2fc671104b0f0c7fffd50a4686791835d8dfc07e0277cc4c4356c92c: no such file or directory 
+[36mINFO[0m[0004] Downloading base image jenkins4eval/jenkinsfile-runner 
+2020/02/13 09:35:35 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0005] Using files from context: [/workspace/source/plugins.txt] 
+[36mINFO[0m[0005] Checking for cached layer gcr.io/*********-multicluster/cache:0319094d835fa912d9330173ac65843231e9e2b3c40039ce14aa6e26be4224ef... 
+2020/02/13 09:35:36 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0005] No cached layer found for cmd RUN cd /app/jenkins && jar -cvf jenkins.war * 
+[36mINFO[0m[0005] Unpacking rootfs as cmd RUN cd /app/jenkins && jar -cvf jenkins.war * requires it. 
+[36mINFO[0m[0022] Taking snapshot of full filesystem...        
 [36mINFO[0m[0030] Using files from context: [/workspace/source/plugins.txt] 
 [36mINFO[0m[0030] COPY plugins.txt /usr/share/jenkins/ref/plugins.txt 
 [36mINFO[0m[0030] Taking snapshot of files...                  
@@ -230,10 +230,10 @@ adding: executable/Executable.class(in = 277) (out= 202)(deflated 27%)
 adding: favicon.ico(in = 17542) (out= 7097)(deflated 59%)
 adding: robots.txt(in = 71) (out= 72)(deflated -1%)
 [36mINFO[0m[0032] Taking snapshot of full filesystem...        
-[36mINFO[0m[0035] Pushing layer gcr.io/*********-multicluster/cache:0319094d835fa912d9330173ac65843231e9e2b3c40039ce14aa6e26be4224ef to cache now 
-[36mINFO[0m[0035] RUN java -jar /app/bin/jenkins-plugin-manager.jar --war /app/jenkins/jenkins.war --plugin-file /usr/share/jenkins/ref/plugins.txt && rm /app/jenkins/jenkins.war 
-[36mINFO[0m[0035] cmd: /bin/sh                                 
-[36mINFO[0m[0035] args: [-c java -jar /app/bin/jenkins-plugin-manager.jar --war /app/jenkins/jenkins.war --plugin-file /usr/share/jenkins/ref/plugins.txt && rm /app/jenkins/jenkins.war] 
+[36mINFO[0m[0036] Pushing layer gcr.io/*********-multicluster/cache:0319094d835fa912d9330173ac65843231e9e2b3c40039ce14aa6e26be4224ef to cache now 
+[36mINFO[0m[0036] RUN java -jar /app/bin/jenkins-plugin-manager.jar --war /app/jenkins/jenkins.war --plugin-file /usr/share/jenkins/ref/plugins.txt && rm /app/jenkins/jenkins.war 
+[36mINFO[0m[0036] cmd: /bin/sh                                 
+[36mINFO[0m[0036] args: [-c java -jar /app/bin/jenkins-plugin-manager.jar --war /app/jenkins/jenkins.war --plugin-file /usr/share/jenkins/ref/plugins.txt && rm /app/jenkins/jenkins.war] 
 File containing list of plugins to be downloaded: /usr/share/jenkins/ref/plugins.txt
 Reading in plugins from /usr/share/jenkins/ref/plugins.txt
 
@@ -246,68 +246,70 @@ Unable to get version from war file
 
 Downloading plugin jackson2-api from url: https://updates.jenkins.io/download/plugins/jackson2-api/2.10.2/jackson2-api.hpi
 
-Downloading plugin google-oauth-plugin from url: https://updates.jenkins.io/download/plugins/google-oauth-plugin/0.8/google-oauth-plugin.hpi
-
-Downloading plugin bouncycastle-api from url: https://updates.jenkins.io/download/plugins/bouncycastle-api/2.17/bouncycastle-api.hpi
-
-Downloading plugin apache-httpcomponents-client-4-api from url: https://updates.jenkins.io/download/plugins/apache-httpcomponents-client-4-api/4.5.5-3.0/apache-httpcomponents-client-4-api.hpi
-
-Downloading plugin workflow-step-api from url: https://updates.jenkins.io/download/plugins/workflow-step-api/2.22/workflow-step-api.hpi
-
-Downloading plugin kubernetes-credentials from url: https://updates.jenkins.io/download/plugins/kubernetes-credentials/0.6.2/kubernetes-credentials.hpi
-
-Downloading plugin docker-commons from url: https://updates.jenkins.io/download/plugins/docker-commons/1.14/docker-commons.hpi
-
-Downloading plugin credentials-binding from url: https://updates.jenkins.io/download/plugins/credentials-binding/1.12/credentials-binding.hpi
-
-Downloading plugin authentication-tokens from url: https://updates.jenkins.io/download/plugins/authentication-tokens/1.3/authentication-tokens.hpi
-
-Downloading plugin variant from url: https://updates.jenkins.io/download/plugins/variant/1.3/variant.hpi
+Downloading plugin kubernetes-client-api from url: https://updates.jenkins.io/download/plugins/kubernetes-client-api/4.6.4-2/kubernetes-client-api.hpi
 
 Downloading plugin kubernetes from url: https://updates.jenkins.io/latest/kubernetes.hpi
 
-Downloading plugin plain-credentials from url: https://updates.jenkins.io/download/plugins/plain-credentials/1.5/plain-credentials.hpi
+Downloading plugin google-oauth-plugin from url: https://updates.jenkins.io/download/plugins/google-oauth-plugin/0.8/google-oauth-plugin.hpi
 
-Downloading plugin scm-api from url: https://updates.jenkins.io/download/plugins/scm-api/2.2.6/scm-api.hpi
+Downloading plugin kubernetes-credentials from url: https://updates.jenkins.io/download/plugins/kubernetes-credentials/0.6.2/kubernetes-credentials.hpi
+
+Downloading plugin authentication-tokens from url: https://updates.jenkins.io/download/plugins/authentication-tokens/1.3/authentication-tokens.hpi
+
+Downloading plugin docker-commons from url: https://updates.jenkins.io/download/plugins/docker-commons/1.14/docker-commons.hpi
+
+Downloading plugin apache-httpcomponents-client-4-api from url: https://updates.jenkins.io/download/plugins/apache-httpcomponents-client-4-api/4.5.5-3.0/apache-httpcomponents-client-4-api.hpi
+
+Downloading plugin bouncycastle-api from url: https://updates.jenkins.io/download/plugins/bouncycastle-api/2.17/bouncycastle-api.hpi
 
 Downloading plugin credentials from url: https://updates.jenkins.io/download/plugins/credentials/2.3.0/credentials.hpi
 
-Downloading plugin oauth-credentials from url: https://updates.jenkins.io/download/plugins/oauth-credentials/0.3/oauth-credentials.hpi
-
-Downloading plugin kubernetes-client-api from url: https://updates.jenkins.io/download/plugins/kubernetes-client-api/4.6.4-2/kubernetes-client-api.hpi
-
-Downloading plugin cloudbees-folder from url: https://updates.jenkins.io/download/plugins/cloudbees-folder/6.9/cloudbees-folder.hpi
+Downloading plugin structs from url: https://updates.jenkins.io/download/plugins/structs/1.20/structs.hpi
 
 Downloading plugin workflow-api from url: https://updates.jenkins.io/download/plugins/workflow-api/2.37/workflow-api.hpi
 
-Downloading plugin structs from url: https://updates.jenkins.io/download/plugins/structs/1.20/structs.hpi
+Downloading plugin cloudbees-folder from url: https://updates.jenkins.io/download/plugins/cloudbees-folder/6.9/cloudbees-folder.hpi
 
 Downloading plugin durable-task from url: https://updates.jenkins.io/download/plugins/durable-task/1.33/durable-task.hpi
-structs downloaded successfully
-kubernetes-credentials downloaded successfully
-scm-api downloaded successfully
-cloudbees-folder downloaded successfully
-credentials downloaded successfully
-authentication-tokens downloaded successfully
+
+Downloading plugin credentials-binding from url: https://updates.jenkins.io/download/plugins/credentials-binding/1.12/credentials-binding.hpi
+
+Downloading plugin plain-credentials from url: https://updates.jenkins.io/download/plugins/plain-credentials/1.5/plain-credentials.hpi
+
+Downloading plugin workflow-step-api from url: https://updates.jenkins.io/download/plugins/workflow-step-api/2.22/workflow-step-api.hpi
+
+Downloading plugin variant from url: https://updates.jenkins.io/download/plugins/variant/1.3/variant.hpi
+
+Downloading plugin oauth-credentials from url: https://updates.jenkins.io/download/plugins/oauth-credentials/0.3/oauth-credentials.hpi
+
+Downloading plugin scm-api from url: https://updates.jenkins.io/download/plugins/scm-api/2.2.6/scm-api.hpi
 workflow-step-api downloaded successfully
-kubernetes downloaded successfully
 plain-credentials downloaded successfully
-apache-httpcomponents-client-4-api downloaded successfully
-durable-task downloaded successfully
-docker-commons downloaded successfully
-jackson2-api downloaded successfully
-variant downloaded successfully
-kubernetes-client-api downloaded successfully
-credentials-binding downloaded successfully
-google-oauth-plugin downloaded successfully
-oauth-credentials downloaded successfully
-bouncycastle-api downloaded successfully
+kubernetes-credentials downloaded successfully
 workflow-api downloaded successfully
+structs downloaded successfully
+docker-commons downloaded successfully
+scm-api downloaded successfully
+variant downloaded successfully
+oauth-credentials downloaded successfully
+authentication-tokens downloaded successfully
+credentials-binding downloaded successfully
+apache-httpcomponents-client-4-api downloaded successfully
+credentials downloaded successfully
+cloudbees-folder downloaded successfully
+google-oauth-plugin downloaded successfully
+kubernetes downloaded successfully
+kubernetes-client-api downloaded successfully
+durable-task downloaded successfully
+jackson2-api downloaded successfully
+bouncycastle-api downloaded successfully
 Done
-[36mINFO[0m[0042] Taking snapshot of full filesystem...        
-[36mINFO[0m[0042] Adding whiteout for /app/jenkins/jenkins.war 
-[36mINFO[0m[0045] Pushing layer gcr.io/*********-multicluster/cache:b6a0f131f820d7524049fe4fa5aa51cbe6384d9c471d9a04e80998ee6eb27171 to cache now 
-[33mWARN[0m[0046] error uploading layer to cache: failed to push to destination gcr.io/*********-multicluster/cache:0319094d835fa912d9330173ac65843231e9e2b3c40039ce14aa6e26be4224ef: UNAUTHORIZED: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication 
-error pushing image: failed to push to destination gcr.io/*********-multicluster/jenkinsfilerunner-image-sample:0.0.1: UNAUTHORIZED: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+[36mINFO[0m[0065] Taking snapshot of full filesystem...        
+[36mINFO[0m[0065] Adding whiteout for /app/jenkins/jenkins.war 
+[36mINFO[0m[0069] Pushing layer gcr.io/*********-multicluster/cache:b6a0f131f820d7524049fe4fa5aa51cbe6384d9c471d9a04e80998ee6eb27171 to cache now 
+ERROR: logging before flag.Parse: E0213 09:36:40.632028      13 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+ERROR: logging before flag.Parse: E0213 09:36:40.634015      13 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+[33mWARN[0m[0069] error uploading layer to cache: failed to push to destination gcr.io/*********-multicluster/cache:0319094d835fa912d9330173ac65843231e9e2b3c40039ce14aa6e26be4224ef: UNAUTHORIZED: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication 
+error pushing image: failed to push to destination gcr.io/*********-multicluster/jenkinsfilerunner-image-sample:0.0.2: UNAUTHORIZED: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
 [31m
 Pipeline failed on stage 'from-build-pack' : container 'step-build-container-build'. The execution of the pipeline has stopped.[0m
